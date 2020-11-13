@@ -1,8 +1,6 @@
 import { Box, Text } from '@inlight-media/react-components';
 
 const Layout = ({ preview, children }) => {
-  console.log(preview);
-
   return (
     <>
       {preview ? (

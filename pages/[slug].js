@@ -69,7 +69,7 @@ export async function getStaticProps({ params, preview = false }) {
         ? {
             ...graphqlRequest,
             initialData: await request(graphqlRequest),
-            token: process.env.API_TOKEN,
+            token: process.env.DATOCMS_TOKEN,
           }
         : {
             enabled: false,
