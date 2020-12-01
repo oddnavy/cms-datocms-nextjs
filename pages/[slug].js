@@ -31,7 +31,8 @@ export async function getStaticProps({ params, preview = false }) {
               heading
               preHeading
               body
-              
+              blockAlignment
+              textAlignment
             }
             ... on ImageTextBlockRecord {
               type: _modelApiKey
