@@ -90,7 +90,6 @@ module.exports = async (client) => {
           heading: false,
         },
       },
-      position: 4,
     });
 
     const textAlignmentField = await client.fields.create(textBlock.id, {
@@ -110,7 +109,6 @@ module.exports = async (client) => {
           heading: false,
         },
       },
-      position: 5,
     });
 
     return textBlock;
@@ -198,7 +196,6 @@ module.exports = async (client) => {
       },
       addons: [],
     },
-    position: 1,
   });
 
   const slugField = await client.fields.create(articleModel.id, {
@@ -222,7 +219,6 @@ module.exports = async (client) => {
         urlPrefix: 'https://www.example.com',
       },
     },
-    position: 2,
   });
 
   const metaField = await client.fields.create(articleModel.id, {
@@ -237,7 +233,6 @@ module.exports = async (client) => {
         max: 320,
       },
     },
-    position: 3,
   });
 
   const textBlock = await createTextBlock(client);
@@ -253,7 +248,6 @@ module.exports = async (client) => {
         itemTypes: [textBlock.id, ImageTextBlock.id],
       },
     },
-    position: 4,
   });
 
   // Create an Article record:
