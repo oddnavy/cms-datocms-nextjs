@@ -1,5 +1,10 @@
 'use strict';
 
+// DatoCMS migration script
+
+// For more examples, head to the Content Management API docs:
+// https://www.datocms.com/docs/content-management-api
+
 module.exports = async (client) => {
   const createBaseBlock = async (config) => {
     const block = await client.itemTypes.create(config);
@@ -167,11 +172,6 @@ module.exports = async (client) => {
 
     return imageTextBlock;
   };
-
-  // DatoCMS migration script
-
-  // For more examples, head to our Content Management API docs:
-  // https://www.datocms.com/docs/content-management-api
 
   // Create an Article model:
   // https://www.datocms.com/docs/content-management-api/resources/item-type/create
