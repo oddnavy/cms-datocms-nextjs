@@ -12,6 +12,13 @@ cp .env.example .env
 
 Setup environment variables
 
+#### Run the migrations to generate models and fields
+
+```bash
+volta install datocms-client
+dato migrate --token=XYZ
+```
+
 #### Run your project locally
 
 ```bash
